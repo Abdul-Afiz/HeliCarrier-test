@@ -1,0 +1,15 @@
+.loading {
+  @apply flex h-screen justify-center items-center;
+}
+
+main {
+  @apply flex flex-col h-screen;
+}
+
+header {
+  @apply bg-white py-3 border-b-[#d4d3d3] border-b-[0.5px];
+}
+
+.children {
+  @apply overflow-auto flex-1 pb-5;
+}

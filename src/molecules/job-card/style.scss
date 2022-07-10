@@ -1,0 +1,22 @@
+.job-card-wrapper {
+  @apply flex gap-6 items-center;
+}
+
+.job-card-img-wrapper {
+  @apply w-[10%] mr-3;
+  img {
+    @apply w-full h-auto object-contain rounded-full;
+  }
+}
+
+.job-card-title {
+  @apply block text-[#0967c2] text-xl font-semibold;
+}
+
+.job-card-info {
+  @apply flex space-x-1 items-center;
+}
+
+.job-card-cta {
+  @apply inline-block bg-[#064d95] text-white p-2 my-2 text-sm rounded-sm;
+}

@@ -6,23 +6,22 @@ import "./style.scss";
 const index = () => {
   const dispatch = useDispatch();
   return (
-    <nav className="bg-white py-4 border-b-[#ebebeb] border-b-[0.5px]">
+    <nav>
       <div className="container flex justify-between items-center">
-        <div className="logo flex items-center">
-          <h1 className="text-[#055bae] text-lg font-bold">JobSearch</h1>{" "}
-          <div className="donut"></div>
+        <div className="logo">
+          <h1>JobSearch</h1> <div className="donut"></div>
         </div>
-        <div className="flex flex-[0.5] justify-center py-3 px-3 border-[#d4d3d3] border-[1px] rounded-full">
+        <div className="input-wrapper">
           <SearchIcon />
           <input
             type="text"
-            className="ml-2 w-full text-lg outline-none"
+            placeholder="Search by title or company"
             onChange={(e) =>
               dispatch(searchTitle(e.currentTarget.value.trim()))
             }
           />
         </div>
-        <div className="logo text-[#055bae] text-lg font-bold">Welcome</div>
+        <div className="text-[#055bae] text-lg font-bold">Welcome</div>
       </div>
     </nav>
   );
