@@ -41,9 +41,9 @@ const index = () => {
   }
 
   const headerFilter = [
-    { title: "Newest", action: () => dispatch(sortDate("newest")) },
-    { title: "Oldest", action: () => dispatch(sortDate("oldest")) },
-    { title: "Company", data: company },
+    { title: "Newest", onClick: () => dispatch(sortDate("newest")) },
+    { title: "Oldest", onClick: () => dispatch(sortDate("oldest")) },
+    { title: "Company", select: company },
   ];
 
   return (
